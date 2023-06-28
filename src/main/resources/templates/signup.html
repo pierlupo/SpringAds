@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+<form th:action="@{/user/signup}" method="post" class="loginForm">
+    <div th:if="${message != null}" class="">
+        <div class="">
+            <div th:text="${message}"></div>
+        </div>
+    </div>
+    <div class="">
+        <input type="text" name="firstName" placeholder="Firstname" class="inputlog">
+    </div>
+    <div class="">
+        <input type="text" name="lastName" placeholder="Lastname" class="inputlog">
+    </div>
+    <div class="">
+        <input type="text" name="email" placeholder="Email" class="inputlog">
+    </div>
+    <div class="">
+        <input type="password" name="password" placeholder="Password" class="inputlog">
+    </div>
+        <button class="btn btnlog">valider</button>
+    </div>
+</form>
+</body>
+</html>

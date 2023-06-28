@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+</head>
+<body>
+<form th:action="@{/user/signin}" method="post" class="loginForm">
+    <div th:if="${message != null}" class="">
+        <div class="">
+            <div th:text="${message}"></div>
+        </div>
+    <div>
+        <input type="text" name="email" placeholder="email" class="inputlog"/>
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="password" class="inputlog"/>
+    </div>
+    <div>
+        <button class="btn btnlog">valider</button>
+    </div>
+    </div>
+</form>
+</body>
+</html>
